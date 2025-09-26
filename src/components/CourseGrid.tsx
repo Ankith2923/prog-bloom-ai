@@ -98,7 +98,7 @@ export const CourseGrid = () => {
           {courses.map((course, index) => (
             <Card 
               key={course.id} 
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border/50 animate-fade-in"
+              className="group interactive-card bg-gradient-card border-border/50 animate-fade-in"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <CardHeader className="pb-3">
@@ -139,7 +139,7 @@ export const CourseGrid = () => {
                   ))}
                 </div>
 
-                <Button className="w-full group/btn">
+                <Button className="w-full group/btn interactive-button glow-on-hover">
                   Start Course
                   <ChevronRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>

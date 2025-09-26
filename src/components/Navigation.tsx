@@ -21,24 +21,28 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#courses" className="text-foreground hover:text-primary transition-colors">
+            <a href="#courses" className="text-foreground hover:text-primary transition-all duration-300 relative group">
               Courses
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#tasks" className="text-foreground hover:text-primary transition-colors">
+            <a href="#tasks" className="text-foreground hover:text-primary transition-all duration-300 relative group">
               Tasks
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#certificates" className="text-foreground hover:text-primary transition-colors">
+            <a href="#certificates" className="text-foreground hover:text-primary transition-all duration-300 relative group">
               Certificates
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            <a href="#about" className="text-foreground hover:text-primary transition-all duration-300 relative group">
               About
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="default">Get Started</Button>
+            <Button variant="ghost" className="interactive-button">Sign In</Button>
+            <Button variant="default" className="interactive-button glow-on-hover">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}

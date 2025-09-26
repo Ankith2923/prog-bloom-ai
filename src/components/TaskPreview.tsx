@@ -112,7 +112,7 @@ export const TaskPreview = () => {
             {sampleTasks.map((task, index) => (
               <Card 
                 key={task.id} 
-                className={`hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border/50 animate-fade-in ${
+                className={`interactive-card bg-gradient-card border-border/50 animate-fade-in ${
                   task.completed ? 'opacity-75' : ''
                 }`}
                 style={{animationDelay: `${index * 0.1}s`}}
@@ -154,6 +154,7 @@ export const TaskPreview = () => {
                       variant={task.completed ? "outline" : "default"} 
                       size="sm"
                       disabled={task.completed}
+                      className={task.completed ? "" : "interactive-button glow-on-hover"}
                     >
                       {task.completed ? "Completed" : "Start Task"}
                     </Button>
